@@ -428,11 +428,16 @@ SOFTWARE.
 
 For questions, suggestions, or collaboration, feel free to reach out:
 
-| **Name** | **LinkedIn** | **GitHub** | **Email** |
-|----------|--------------|------------|-----------|
-| Muhammad Umar Afzal | [LinkedIn URL] | [GitHub URL] | [Email] |
-| [Friend 1 Name] | [LinkedIn URL] | [GitHub URL] | [Email] |
-| [Friend 2 Name] | [LinkedIn URL] | [GitHub URL] | [Email] |
+**Muhammad Umar Afzal**
+- [LinkedIn](https://www.linkedin.com/in/mumarafzall)
+- [GitHub](https://github.com/umar-devv)
+
+**Maheen Rashid**
+- [LinkedIn](https://www.linkedin.com/in/maheen-rashid-90a796378/)
+- [GitHub](https://github.com/SyedaMaheenRashid)
+
+**Abdul Rehman**
+- [LinkedIn](https://www.linkedin.com/in/abdul-rehman-704088332/)
 
 ---
 
