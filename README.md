@@ -337,16 +337,16 @@ You can view it directly in this repository or download it to upload to your Ard
 
 ## Project Photos
 
-### 🖼️ Final Working Setup
-<img src="images/1.jpg" width="500" height="auto">
-
-### 🔬 Circuit Close-up
-<img src="images/2.jpg" width="500" height="auto">
-
-### 📺 LCD Display
+###  🔧
 <img src="images/3.jpg" width="500" height="auto">
 
-### 🔧 System Components
+### 🖼️ 
+<img src="images/1.jpg" width="500" height="auto">
+
+### 🔬 
+<img src="images/2.jpg" width="500" height="auto">
+
+###  📺
 <img src="images/4.jpg" width="500" height="auto">
 ---
 
