@@ -344,8 +344,8 @@ You can view it directly in this repository or download it to upload to your Ard
 | **Name** | **Role** | **Contributions** |
 |----------|----------|-------------------|
 | **Muhammad Umar Afzal** | Project Lead / Programmer | LCD integration, buzzer logic, code debugging, system testing, README documentation |
-| **[Friend 1 Full Name]** | Hardware Engineer | Circuit assembly, hardware connections, component selection, soldering |
-| **[Friend 2 Full Name]** | Embedded Developer | RTC module programming, push button logic, I2C communication, documentation |
+| **Abdul Rehman** | Hardware Engineer | Circuit assembly, hardware connections, component selection, soldering |
+| **Maheen Rashid** | Embedded Developer | RTC module programming, push button logic, I2C communication, documentation |
 
 > *All team members collaborated on testing, troubleshooting, and finalizing the project.*
 
