@@ -7,21 +7,23 @@
 ---
 
 ## 📌 Table of Contents
-- [Overview](#-overview)
-- [Problem Statement](#-problem-statement)
-- [Features](#-features)
-- [Components Used](#-components-used)
-- [Circuit Diagram](#-circuit-diagram)
-- [Pin Connections](#-pin-connections)
-- [How It Works](#-how-it-works)
-- [Arduino Code & Setup](#-arduino-code--setup)
-- [User Guide](#-user-guide)
-- [Team Members](#-team-members)
-- [Technologies & Tools](#-technologies--tools)
-- [Project Photos](#-project-photos)
-- [Future Improvements](#-future-improvements)
-- [Acknowledgments](#-acknowledgments)
-- [License](#-license)
+- [Overview](#overview)
+- [Problem Statement](#problem-statement)
+- [Features](#features)
+- [Components Used](#components-used)
+- [Circuit Diagram](#circuit-diagram)
+- [Pin Connections](#pin-connections)
+- [How It Works](#how-it-works)
+- [Arduino Code & Setup](#arduino-code--setup)
+- [User Guide](#user-guide)
+- [Team Members](#team-members)
+- [Technologies & Tools](#technologies--tools)
+- [Project Photos](#project-photos)
+- [Future Improvements](#future-improvements)
+- [Acknowledgments](#acknowledgments)
+- [License](#license)
+- [Contact](#contact)
+- [Support](#support)
 
 ---
 
