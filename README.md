@@ -126,9 +126,9 @@ DS3231 RTC
 [Button3] ---- D4 ---- GND
 
 
-<img width="1402" height="1122" alt="ChatGPT Image Jun 27, 2026, 04_25_13 PM" src="https://github.com/user-attachments/assets/c6e04103-097c-4abe-88a0-83123af1eda2" />
 
 ```
+<img width="1402" height="1122" alt="ChatGPT Image Jun 27, 2026, 04_25_13 PM" src="https://github.com/user-attachments/assets/c6e04103-097c-4abe-88a0-83123af1eda2" />
 
 ---
 
