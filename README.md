@@ -335,29 +335,19 @@ You can view it directly in this repository or download it to upload to your Ard
 
 ---
 
-# Project Photos
+## Project Photos
 
-## 🖼️ Final Setup
-*Replace with actual image path*
+### 🖼️ Photo 1
+![Photo 1](images/1.jpg)
 
-```md
-![Final Setup](images/final_setup.jpg)
-```
+### 🔬 Photo 2
+![Photo 2](images/2.jpg)
 
-## 🔬 Circuit Close-up
-*Replace with actual image path*
+### 📺 Photo 3
+![Photo 3](images/3.jpg)
 
-```md
-![Circuit Close-up](images/circuit_closeup.jpg)
-```
-
-## 📺 LCD Display
-*Replace with actual image path*
-
-```md
-![LCD Display](images/lcd_display.jpg)
-```
-
+### 🔧 Photo 4
+![Photo 4](images/4.jpg)
 ---
 
 # Future Improvements
