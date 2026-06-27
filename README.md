@@ -6,29 +6,28 @@
 
 ---
 
-
-## 📌 Table of Contents
-- [Overview](#overview)
-- [Problem Statement](#problem-statement)
-- [Features](#features)
-- [Components Used](#components-used)
-- [Circuit Diagram](#circuit-diagram)
-- [Pin Connections](#pin-connections)
-- [How It Works](#how-it-works)
-- [Arduino Code & Setup](#arduino-code--setup)
-- [User Guide](#user-guide)
-- [Team Members](#team-members)
-- [Technologies & Tools](#technologies--tools)
-- [Project Photos](#project-photos)
-- [Future Improvements](#future-improvements)
-- [Acknowledgments](#acknowledgments)
-- [License](#license)
-- [Contact](#contact)
-- [Support](#support)
+## Table of Contents
+1. [Overview](#overview)
+2. [Problem Statement](#problem-statement)
+3. [Features](#features)
+4. [Components Used](#components-used)
+5. [Circuit Diagram](#circuit-diagram)
+6. [Pin Connections](#pin-connections)
+7. [How It Works](#how-it-works)
+8. [Arduino Code and Setup](#arduino-code-and-setup)
+9. [User Guide](#user-guide)
+10. [Team Members](#team-members)
+11. [Technologies and Tools](#technologies--tools)
+12. [Project Photos](#project-photos)
+13. [Future Improvements](#future-improvements)
+14. [Acknowledgments](#acknowledgments)
+15. [License](#license)
+16. [Contact](#contact)
+17. [Support](#support)
 
 ---
 
-## 📖 Overview
+## Overview
 
 The **Smart Medicine Reminder System** is an embedded systems project designed to help users remember their medication schedules. Using an Arduino UNO, a real-time clock (RTC) module, and an LCD display, the system provides visual and audio alerts at preset medicine times. This low-cost, user-friendly solution addresses a critical healthcare challenge – medication non-adherence – especially among elderly patients.
 
@@ -36,7 +35,7 @@ The **Smart Medicine Reminder System** is an embedded systems project designed t
 
 ---
 
-## 🎯 Problem Statement
+## Problem Statement
 
 Millions of people worldwide forget to take their medication on time, leading to:
 - ⚠️ Worsening of chronic conditions
@@ -48,7 +47,7 @@ Our goal was to create a **simple, affordable, and effective** reminder system t
 
 ---
 
-## ✨ Features
+## Features
 
 | **Feature** | **Description** |
 |-------------|-----------------|
@@ -63,7 +62,7 @@ Our goal was to create a **simple, affordable, and effective** reminder system t
 
 ---
 
-## 🧩 Components Used
+## Components Used
 
 | **Component** | **Quantity** | **Purpose** |
 |---------------|--------------|-------------|
@@ -80,52 +79,51 @@ Our goal was to create a **simple, affordable, and effective** reminder system t
 
 ---
 
-## 🔌 Circuit Diagram
-
-```
+## Circuit Diagram
 +---------------------------+
-|        Arduino UNO        |
-|                           |
-|  5V  ---------------------+-----> RTC VCC, LCD VCC, Buzzer VCC
-|  GND ---------------------+-----> RTC GND, LCD GND, Buzzer GND
-|                           |
-|  A4 (SDA)  --------------> RTC SDA / LCD SDA
-|  A5 (SCL)  --------------> RTC SCL / LCD SCL
-|                           |
-|  D2  ---------------------> Push Button 1 (Hour +)
-|  D3  ---------------------> Push Button 2 (Minute +)
-|  D4  ---------------------> Push Button 3 (Stop Alarm)
-|  D5  ---------------------> LED (Anode via 220Ω)
-|  D6  ---------------------> Buzzer (via 220Ω)
-|                           |
+| Arduino UNO |
+| |
+| 5V ---------------------+-----> RTC VCC, LCD VCC, Buzzer VCC
+| GND ---------------------+-----> RTC GND, LCD GND, Buzzer GND
+| |
+| A4 (SDA) --------------> RTC SDA / LCD SDA
+| A5 (SCL) --------------> RTC SCL / LCD SCL
+| |
+| D2 ---------------------> Push Button 1 (Hour +)
+| D3 ---------------------> Push Button 2 (Minute +)
+| D4 ---------------------> Push Button 3 (Stop Alarm)
+| D5 ---------------------> LED (Anode via 220Ω)
+| D6 ---------------------> Buzzer (via 220Ω)
+| |
 +---------------------------+
 
-        LCD 16x2 (I2C)
-    +-----------------+
-    | VCC ---- 5V     |
-    | GND ---- GND    |
-    | SDA ---- A4     |
-    | SCL ---- A5     |
-    +-----------------+
+LCD 16x2 (I2C)
++-----------------+
+| VCC ---- 5V |
+| GND ---- GND |
+| SDA ---- A4 |
+| SCL ---- A5 |
++-----------------+
 
-        DS3231 RTC
-    +-----------------+
-    | VCC ---- 5V     |
-    | GND ---- GND    |
-    | SDA ---- A4     |
-    | SCL ---- A5     |
-    +-----------------+
+DS3231 RTC
++-----------------+
+| VCC ---- 5V |
+| GND ---- GND |
+| SDA ---- A4 |
+| SCL ---- A5 |
++-----------------+
 
-    [Buzzer] ---- D6 ---- GND
-    [LED]    ---- D5 ---- GND
-    [Button1] ---- D2 ---- GND
-    [Button2] ---- D3 ---- GND
-    [Button3] ---- D4 ---- GND
-```
+[Buzzer] ---- D6 ---- GND
+[LED] ---- D5 ---- GND
+[Button1] ---- D2 ---- GND
+[Button2] ---- D3 ---- GND
+[Button3] ---- D4 ---- GND
+
+text
 
 ---
 
-## 📊 Pin Connections
+## Pin Connections
 
 | **Arduino Pin** | **Connected To** | **Notes** |
 |-----------------|------------------|-----------|
@@ -141,7 +139,7 @@ Our goal was to create a **simple, affordable, and effective** reminder system t
 
 ---
 
-## ⚙️ How It Works
+## How It Works
 
 1. **System Initialization**
    - The Arduino boots up and initializes the RTC module and LCD.
@@ -163,13 +161,13 @@ Our goal was to create a **simple, affordable, and effective** reminder system t
 
 ---
 
-## 💻 Arduino Code & Setup
+## Arduino Code and Setup
 
 The project is programmed in **C++** using the Arduino IDE. Below are complete instructions to get your system up and running.
 
 ---
 
-### 📦 1. Install Required Libraries
+### 1. Install Required Libraries
 
 Before uploading the code, you need to install two libraries in the Arduino IDE.
 
@@ -184,7 +182,7 @@ Before uploading the code, you need to install two libraries in the Arduino IDE.
 
 ---
 
-### 🔌 2. Connect Your Hardware
+### 2. Connect Your Hardware
 
 Connect the components to your Arduino UNO as per the pin connections table above.
 
@@ -206,14 +204,14 @@ Connect the components to your Arduino UNO as per the pin connections table abov
 
 ---
 
-### 📥 3. Download the Code
+### 3. Download the Code
 
 - The full Arduino code (`medicine_reminder.ino`) is available in the `code/` folder of this repository.
 - Or copy the code directly from the [`code/medicine_reminder.ino`](code/medicine_reminder.ino) file.
 
 ---
 
-### ⬆️ 4. Upload the Code to Arduino
+### 4. Upload the Code to Arduino
 
 **Step-by-step:**
 1. Connect your Arduino UNO to your computer using a **USB cable**.
@@ -226,7 +224,7 @@ Connect the components to your Arduino UNO as per the pin connections table abov
 
 ---
 
-### ⏰ 5. Set the RTC Time (First Time Only)
+### 5. Set the RTC Time (First Time Only)
 
 The first time you run the system, you need to set the correct time on the RTC module.
 
@@ -235,48 +233,53 @@ The first time you run the system, you need to set the correct time on the RTC m
 - Just uncomment this line in `setup()`:
   ```cpp
   // rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
-  ```
-  Remove the `//` to enable it, upload once, then comment it again to prevent resetting on every upload.
-
-**Option B: Manual**
-- Replace the line with your current date and time:
-  ```cpp
-  rtc.adjust(DateTime(2026, 6, 27, 14, 30, 0));
-  // Year, Month, Day, Hour, Minute, Second (24-hour format)
-  ```
-- Upload once, then comment it out.
+Remove the `//` to enable it, upload once, then comment it again to prevent resetting on every upload.
 
 ---
 
-### 🎯 6. Test the System
+### ⏰ Option B: Manual
 
-- The LCD should display **"Smart Medicine Reminder System"** for 2 seconds, then show the current time and alarm time.
-- Press the **Hour Button** (D2) to increase the alarm hour.
-- Press the **Minute Button** (D3) to increase the alarm minute.
-- Set the alarm to 1-2 minutes ahead of the current time.
+Replace the line with your current date and time:
+
+```cpp
+rtc.adjust(DateTime(2026, 6, 27, 14, 30, 0));
+// Year, Month, Day, Hour, Minute, Second (24-hour format)
+```
+
+Upload once, then comment it out.
+
+---
+
+## 🎯 Test the System
+
+- The LCD should display **"Smart Medicine Reminder System"** for **2 seconds**, then show the current time and alarm time.
+- Press the **Hour Button (D2)** to increase the alarm hour.
+- Press the **Minute Button (D3)** to increase the alarm minute.
+- Set the alarm to **1–2 minutes ahead** of the current time.
 - Wait – when the time matches, the **buzzer will sound** and the **LED will blink**.
-- Press the **Stop Button** (D4) to dismiss the alarm.
+- Press the **Stop Button (D4)** to dismiss the alarm.
 
 ---
 
-### ❓ Troubleshooting
+## ❓ Troubleshooting
 
 | **Issue** | **Solution** |
 |-----------|--------------|
-| LCD shows "RTC ERROR!" | Check wiring: SDA→A4, SCL→A5, 5V→VCC, GND→GND |
+| LCD shows **"RTC ERROR!"** | Check wiring: **SDA → A4, SCL → A5, 5V → VCC, GND → GND** |
 | LCD shows nothing/boxes | Change `LCD_ADDRESS` from `0x27` to `0x3F` in the code |
-| Time resets when power is off | The RTC battery (CR2032) is dead – replace it |
-| Buttons not responding | Buttons must connect between the pin and **GND** (using INPUT_PULLUP) |
+| Time resets when power is off | The RTC battery (**CR2032**) is dead – replace it |
+| Buttons not responding | Buttons must connect between the pin and **GND** (using `INPUT_PULLUP`) |
 | Alarm triggers at wrong time | RTC time is incorrect – re-run the `rtc.adjust()` code |
-| "Library not found" error | Install both required libraries via Library Manager |
+| **"Library not found"** error | Install both required libraries via Library Manager |
 | Upload fails | Check Port selection and USB cable connection |
 
 ---
 
-### 📁 Code File Location
+## 📁 Code File Location
 
 The full code is saved as:
-```
+
+```text
 code/medicine_reminder.ino
 ```
 
@@ -284,20 +287,20 @@ You can view it directly in this repository or download it to upload to your Ard
 
 ---
 
-## 📖 User Guide
+# User Guide
 
 | **Step** | **Action** | **Result** |
 |----------|------------|------------|
 | 1 | Power on the system | LCD shows current time and default reminder |
-| 2 | Press **Hour Button** | Hour value increments (0-23) |
-| 3 | Press **Minute Button** | Minute value increments (0-59) |
+| 2 | Press **Hour Button** | Hour value increments (0–23) |
+| 3 | Press **Minute Button** | Minute value increments (0–59) |
 | 4 | Wait for set time | System monitors time in background |
 | 5 | Alarm triggers at set time | Buzzer sounds, LED blinks, LCD alerts |
 | 6 | Press **Stop Button** | Alarm stops, system resets to monitoring mode |
 
 ---
 
-## 👥 Team Members
+# Team Members
 
 | **Name** | **Role** | **Contributions** |
 |----------|----------|-------------------|
@@ -309,7 +312,7 @@ You can view it directly in this repository or download it to upload to your Ard
 
 ---
 
-## 🛠️ Technologies & Tools
+# Technologies & Tools
 
 | **Category** | **Technologies** |
 |--------------|------------------|
@@ -319,27 +322,36 @@ You can view it directly in this repository or download it to upload to your Ard
 | **RTC Module** | DS3231 (High-precision real-time clock) |
 | **Display** | 16×2 LCD with I2C backpack |
 | **Version Control** | Git & GitHub |
-| **Documentation** | Markdown (README.md) |
+| **Documentation** | Markdown (`README.md`) |
 
 ---
 
-## 📸 Project Photos
+# Project Photos
 
-### 🖼️ Final Setup
-*[Replace with actual image path]*
+## 🖼️ Final Setup
+*Replace with actual image path*
+
+```md
 ![Final Setup](images/final_setup.jpg)
+```
 
-### 🔬 Circuit Close-up
-*[Replace with actual image path]*
+## 🔬 Circuit Close-up
+*Replace with actual image path*
+
+```md
 ![Circuit Close-up](images/circuit_closeup.jpg)
+```
 
-### 📺 LCD Display
-*[Replace with actual image path]*
+## 📺 LCD Display
+*Replace with actual image path*
+
+```md
 ![LCD Display](images/lcd_display.jpg)
+```
 
 ---
 
-## 🚀 Future Improvements
+# Future Improvements
 
 - [ ] **Add a buzzer snooze function** – Allow user to snooze the alarm for 5 minutes.
 - [ ] **Multiple medication times** – Support up to 3 different reminder times.
@@ -352,7 +364,7 @@ You can view it directly in this repository or download it to upload to your Ard
 
 ---
 
-## 🙏 Acknowledgments
+# Acknowledgments
 
 - **Our Professors & Mentors** – For their guidance and support throughout this project.
 - **Arduino Community** – For providing open-source libraries and resources.
@@ -362,11 +374,11 @@ You can view it directly in this repository or download it to upload to your Ard
 
 ---
 
-## 📜 License
+# License
 
-This project is licensed under the **MIT License** – you are free to use, modify, and distribute it for personal or commercial purposes. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License** – you are free to use, modify, and distribute it for personal or commercial purposes. See the **LICENSE** file for details.
 
-```
+```text
 MIT License
 
 Copyright (c) 2026 Muhammad Umar Afzal, [Friend 1 Full Name], [Friend 2 Full Name]
@@ -392,7 +404,7 @@ SOFTWARE.
 
 ---
 
-## 📬 Contact
+# Contact
 
 For questions, suggestions, or collaboration, feel free to reach out:
 
@@ -404,13 +416,15 @@ For questions, suggestions, or collaboration, feel free to reach out:
 
 ---
 
-## ⭐ Support
+# Support
 
 If you found this project helpful:
+
 - ⭐ Star this repository on GitHub
 - 🔄 Share it with your network
 - 💬 Leave a comment or feedback
 
 ---
 
-### 🤝 Built with Teamwork & Passion ❤️
+# 🤝 Built with Teamwork & Passion ❤️
+````
