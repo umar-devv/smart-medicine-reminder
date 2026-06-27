@@ -20,10 +20,9 @@
 11. [Technologies and Tools](#technologies--tools)
 12. [Project Photos](#project-photos)
 13. [Future Improvements](#future-improvements)
-14. [Acknowledgments](#acknowledgments)
-15. [License](#license)
-16. [Contact](#contact)
-17. [Support](#support)
+14. [License](#license)
+15. [Contact](#contact)
+16. [Support](#support)
 
 ---
 
@@ -364,15 +363,6 @@ You can view it directly in this repository or download it to upload to your Ard
 
 ---
 
-# Acknowledgments
-
-- **Our Professors & Mentors** – For their guidance and support throughout this project.
-- **Arduino Community** – For providing open-source libraries and resources.
-- **CodeAlpha** – For inspiring us to build real-world AI and embedded systems projects.
-- **AWS Training & Certification** – For helping us build skills in AI and cloud computing.
-- **Dr. [Professor Name]** – For suggesting the medicine reminder concept.
-
----
 
 # License
 
